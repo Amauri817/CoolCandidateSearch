@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import {Candidate} from '../interfaces/Candidate.interface';
-import { Link } from 'react-router-dom';
 
 const SavedCandidates = () => {
   const [savedCandidates, setSavedCandidates] = useState<Candidate[]>([]);
@@ -52,7 +51,7 @@ const deleteCandidate = (username: string) => {
                 <td>{candidate.company || "Empty"}</td>
                 <td>{candidate.bio || "Empty"}</td>
                 <td>
-                  <Link to="/SavedCandidates"><button style={{padding:"20px", backgroundColor:"red"}} onClick={() => deleteCandidate(candidate.login)}>➖</button></Link>
+                  <button style={{padding:"20px", backgroundColor:"red"}} onClick={() => deleteCandidate(candidate.login)}>➖</button>
                 </td>
               </tr>
             ))}
