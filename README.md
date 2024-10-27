@@ -30,7 +30,7 @@ A lot.
 [Website](https://calm-mooncake-0d34fa.netlify.app/) is deployed using Netlify.
 
 ## Preview
-[Video Preview](/public/Super%20Cool%20Candidate%20Search%20-%20Google%20Chrome%202024-10-26%2023-31-10.mp4)
+[Video Preview](https://drive.google.com/file/d/1K6lp8Bmukiu4jf1YDRgLVRgoB-A1VAI-/view?usp=sharing)
 
 
 ## Questions
