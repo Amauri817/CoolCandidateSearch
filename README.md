@@ -30,7 +30,8 @@ A lot.
 [Website](https://vocal-gnome-549b80.netlify.app/) is deployed using Netlify.
 
 ## Preview
-![Video Preview](https://drive.google.com/file/d/1k72p1EOHfr2X5T6MLQY-gv-CaUVd-cwu/view?usp=sharing)
+[Video Preview](/public/Super%20Cool%20Candidate%20Search%20-%20Google%20Chrome%202024-10-26%2023-31-10.mp4)
+
 
 ## Questions
 Not many
