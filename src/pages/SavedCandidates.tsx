@@ -51,7 +51,8 @@ const deleteCandidate = (username: string) => {
                 <td>{candidate.company || "Empty"}</td>
                 <td>{candidate.bio || "Empty"}</td>
                 <td>
-                  <button style={{padding:"20px", backgroundColor:"red"}} onClick={() => deleteCandidate(candidate.login)}>➖</button>
+                  <a href="/">                  <button style={{padding:"20px", backgroundColor:"red"}} onClick={() => deleteCandidate(candidate.login)}>➖</button>
+                  </a>
                 </td>
               </tr>
             ))}
