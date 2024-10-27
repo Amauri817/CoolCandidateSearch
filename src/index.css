@@ -4,7 +4,7 @@
   font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  min-height: 100vh;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -29,13 +29,7 @@ body {
     rgba(9, 9, 121, 1) 15%,
     rgba(0, 2, 18, 1) 100%
   );
-  background-size: cover;
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  margin: 0;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
 }
 
 h1 {
@@ -44,15 +38,14 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 50%;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  justify-content: space-around;
 }
 button:hover {
   border-color: #646cff;
@@ -75,15 +68,6 @@ button:focus-visible {
   }
 }
 
-main {
-  color: #fff;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 tr {
   border-radius: 10px;
   background-color: #000;
@@ -94,27 +78,40 @@ tbody tr:nth-child(odd) {
   background-color: #333333;
 }
 
-.nav {
+nav {
   display: flex;
-  justify-content: flex-start;
-  padding: 1em 2em;
+  align-items: center;
+  position: sticky;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 
-.nav-item {
-  padding: 0 0.5rem;
-  list-style: none;
-}
-
-.nav-link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.active {
-  font-weight: 700;
-}
 
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+.card {
+  border-radius: 10%;
+  background-color: black;
+  text-align: center;
+  margin-right: 39%;
+  margin-left: 39%;
+}
+
+.Info {
+  padding-left: 30px;
+  text-align: left;
+}
+
+img {
+  border-radius: 10% 10% 3% 3%;
+  max-width: 100%;
+}
+
+.saved {
+  text-align: center;
+  padding: 0 0 10% 5%;
 }
