@@ -27,7 +27,7 @@ Amauri
 A lot.
 
 ## Website
-[Website](https://vocal-gnome-549b80.netlify.app/) is deployed using Netlify.
+[Website](https://calm-mooncake-0d34fa.netlify.app/) is deployed using Netlify.
 
 ## Preview
 [Video Preview](/public/Super%20Cool%20Candidate%20Search%20-%20Google%20Chrome%202024-10-26%2023-31-10.mp4)

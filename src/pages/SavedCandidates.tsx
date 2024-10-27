@@ -27,7 +27,7 @@ const deleteCandidate = (username: string) => {
     <div className='saved'>
       <h1 style={{textAlign:"center"}}>Potential Candidates</h1>
       {savedCandidates.length > 0 ? (
-        <table>
+        <table style={{textAlign:"center"}}>
           <thead>
             <tr>
               <th>Image</th>
