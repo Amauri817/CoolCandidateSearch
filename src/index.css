@@ -83,13 +83,12 @@ nav {
   align-items: center;
   position: sticky;
   font-size: 25px;
-  padding-top: 20px;
   padding-left: 25px;
 }
 
 
 .table {
-  width: 80vw;
+  width: 100vw;
   table-layout: fixed;
 }
 
@@ -113,5 +112,5 @@ img {
 
 .saved {
   text-align: center;
-  padding: 0 0 10% 5%;
+  padding: 0 0 0 35%;
 }

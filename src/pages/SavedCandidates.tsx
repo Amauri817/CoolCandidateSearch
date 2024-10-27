@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import {Candidate} from '../interfaces/Candidate.interface';
+import { Link } from 'react-router-dom';
 
 const SavedCandidates = () => {
   const [savedCandidates, setSavedCandidates] = useState<Candidate[]>([]);
@@ -17,17 +18,17 @@ const deleteCandidate = (username: string) => {
 
     localStorage.setItem('SavedCandidates', JSON.stringify(updatedCandidates));
     console.log(`Candidate ${username} has been deleted.`);
-    window.location.reload();
+
   } catch (error) {
     console.error('Error deleting candidate', error);
   }
 };
 
   return (
-    <div className='saved'>
+    <div >
       <h1 style={{textAlign:"center"}}>Potential Candidates</h1>
       {savedCandidates.length > 0 ? (
-        <table style={{textAlign:"center"}}>
+        <table className='saved' style={{textAlign:"center"}}>
           <thead>
             <tr>
               <th>Image</th>
@@ -43,7 +44,7 @@ const deleteCandidate = (username: string) => {
             {savedCandidates.map((candidate, index) => (
               <tr key={index}>
                 <td>
-                  <a href={candidate.html_url} target='_blank'><img src={candidate.avatar_url} alt={candidate.name} width={100}height={100}/></a>
+                  <a href={candidate.html_url} target='_blank'><img src={candidate.avatar_url} alt={candidate.name} width={100 }height={100}/></a>
                 </td>
                 <td>{candidate.login || "Empty"}</td>
                 <td>{candidate.location || "Empty"}</td>
@@ -51,14 +52,14 @@ const deleteCandidate = (username: string) => {
                 <td>{candidate.company || "Empty"}</td>
                 <td>{candidate.bio || "Empty"}</td>
                 <td>
-                  <button style={{padding:"20px", backgroundColor:"red"}} onClick={() => deleteCandidate(candidate.login)}>➖</button>
+                  <Link to="/SavedCandidates"><button style={{padding:"20px", backgroundColor:"red"}} onClick={() => deleteCandidate(candidate.login)}>➖</button></Link>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       ) : (
-        <p>No candidates have been accepted</p>
+        <p style={{textAlign:"center"}}>No candidates have been accepted</p>
       )}
     </div>
   );
